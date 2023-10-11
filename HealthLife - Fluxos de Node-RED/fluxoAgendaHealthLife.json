@@ -1,0 +1,398 @@
+[
+    {
+        "id": "70550ba6b62b0406",
+        "type": "tab",
+        "label": "healthHome",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "16ba3ff76cf0c6e2",
+        "type": "http in",
+        "z": "70550ba6b62b0406",
+        "name": "",
+        "url": "/healthLifeTaskGet",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 40,
+        "wires": [
+            [
+                "b681bfeacfac8f10"
+            ]
+        ]
+    },
+    {
+        "id": "4432e13d0a43865e",
+        "type": "http response",
+        "z": "70550ba6b62b0406",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 510,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "5de4b176da25a05f",
+        "type": "debug",
+        "z": "70550ba6b62b0406",
+        "name": "debug 43",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "466d9f0c51214ec2",
+        "type": "http in",
+        "z": "70550ba6b62b0406",
+        "name": "",
+        "url": "/healthLifeTaskPost",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 170,
+        "y": 160,
+        "wires": [
+            [
+                "f2ac82618cef3db5"
+            ]
+        ]
+    },
+    {
+        "id": "d2ae592878d5f1fe",
+        "type": "http response",
+        "z": "70550ba6b62b0406",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 530,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "10b85b1e08945dd1",
+        "type": "debug",
+        "z": "70550ba6b62b0406",
+        "name": "debug 44",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "bf22a7b53fd48d2b",
+        "type": "http in",
+        "z": "70550ba6b62b0406",
+        "name": "",
+        "url": "/healthLifeTaskPut",
+        "method": "put",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 260,
+        "wires": [
+            [
+                "7507b81f71a89e60"
+            ]
+        ]
+    },
+    {
+        "id": "73aef0fa82d9df0d",
+        "type": "http response",
+        "z": "70550ba6b62b0406",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 470,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "6e57de10c93ff716",
+        "type": "debug",
+        "z": "70550ba6b62b0406",
+        "name": "debug 46",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "d859de92603d8f6b",
+        "type": "http in",
+        "z": "70550ba6b62b0406",
+        "name": "",
+        "url": "/healthLifeTaskRead",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 150,
+        "y": 460,
+        "wires": [
+            [
+                "771b0d143589ee06"
+            ]
+        ]
+    },
+    {
+        "id": "32411e933840f4ed",
+        "type": "http response",
+        "z": "70550ba6b62b0406",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 490,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "a3aee39dca5cf015",
+        "type": "http in",
+        "z": "70550ba6b62b0406",
+        "name": "",
+        "url": "/healthLifeTaskDelete",
+        "method": "delete",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 360,
+        "wires": [
+            [
+                "e4d478049e91d048"
+            ]
+        ]
+    },
+    {
+        "id": "8c73c32188ab95b0",
+        "type": "http response",
+        "z": "70550ba6b62b0406",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 510,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "973a664973bde68f",
+        "type": "debug",
+        "z": "70550ba6b62b0406",
+        "name": "debug 47",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 509,
+        "y": 403,
+        "wires": []
+    },
+    {
+        "id": "3f1727ecc0c1b9e0",
+        "type": "debug",
+        "z": "70550ba6b62b0406",
+        "name": "debug 48",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 500,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "c2a9a830bfee6958",
+        "type": "split",
+        "z": "70550ba6b62b0406",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 910,
+        "y": 280,
+        "wires": [
+            [
+                "a2d5e243278f8c7f"
+            ]
+        ]
+    },
+    {
+        "id": "7d5defceabdfe133",
+        "type": "http in",
+        "z": "70550ba6b62b0406",
+        "name": "",
+        "url": "/healthLifeTaskDeleteArray",
+        "method": "delete",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 760,
+        "y": 240,
+        "wires": [
+            [
+                "c2a9a830bfee6958"
+            ]
+        ]
+    },
+    {
+        "id": "7c6bd4a21f574d16",
+        "type": "http response",
+        "z": "70550ba6b62b0406",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1170,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "b681bfeacfac8f10",
+        "type": "cloudantplus in",
+        "z": "70550ba6b62b0406",
+        "name": "",
+        "cloudant": "8f5e19ff4ad7acdd",
+        "database": "hlt",
+        "service": "_ext_",
+        "search": "_all_",
+        "design": "",
+        "index": "",
+        "x": 350,
+        "y": 40,
+        "wires": [
+            [
+                "5de4b176da25a05f",
+                "4432e13d0a43865e"
+            ]
+        ]
+    },
+    {
+        "id": "f2ac82618cef3db5",
+        "type": "cloudantplus out",
+        "z": "70550ba6b62b0406",
+        "name": "",
+        "cloudant": "8f5e19ff4ad7acdd",
+        "database": "hlt",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "insert",
+        "x": 350,
+        "y": 160,
+        "wires": [
+            [
+                "d2ae592878d5f1fe",
+                "10b85b1e08945dd1"
+            ]
+        ]
+    },
+    {
+        "id": "771b0d143589ee06",
+        "type": "cloudantplus in",
+        "z": "70550ba6b62b0406",
+        "name": "",
+        "cloudant": "8f5e19ff4ad7acdd",
+        "database": "hlt",
+        "service": "_ext_",
+        "search": "_all_",
+        "design": "",
+        "index": "",
+        "x": 350,
+        "y": 460,
+        "wires": [
+            [
+                "32411e933840f4ed",
+                "3f1727ecc0c1b9e0"
+            ]
+        ]
+    },
+    {
+        "id": "e4d478049e91d048",
+        "type": "cloudantplus out",
+        "z": "70550ba6b62b0406",
+        "name": "",
+        "cloudant": "8f5e19ff4ad7acdd",
+        "database": "hlt",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "delete",
+        "x": 370,
+        "y": 360,
+        "wires": [
+            [
+                "8c73c32188ab95b0",
+                "973a664973bde68f"
+            ]
+        ]
+    },
+    {
+        "id": "7507b81f71a89e60",
+        "type": "cloudantplus out",
+        "z": "70550ba6b62b0406",
+        "name": "",
+        "cloudant": "8f5e19ff4ad7acdd",
+        "database": "hlt",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "insert",
+        "x": 330,
+        "y": 260,
+        "wires": [
+            [
+                "73aef0fa82d9df0d"
+            ]
+        ]
+    },
+    {
+        "id": "a2d5e243278f8c7f",
+        "type": "cloudantplus out",
+        "z": "70550ba6b62b0406",
+        "name": "",
+        "cloudant": "8f5e19ff4ad7acdd",
+        "database": "hlt",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "delete",
+        "x": 1050,
+        "y": 320,
+        "wires": [
+            [
+                "7c6bd4a21f574d16"
+            ]
+        ]
+    },
+    {
+        "id": "8f5e19ff4ad7acdd",
+        "type": "cloudantplus",
+        "host": "https://apikey-v2-16d9pc9gjneh8on884qeslyhcih917bgxgtclub94xtt:02d33f7efed8fbdd9ebad5e26f041d13@8472bb0f-4f34-4675-bd25-3cf7a52343d1-bluemix.cloudantnosqldb.appdomain.cloud",
+        "name": "",
+        "useapikey": true
+    }
+]

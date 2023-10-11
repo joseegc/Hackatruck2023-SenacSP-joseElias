@@ -1,0 +1,268 @@
+[
+    {
+        "id": "7fd698158a8d52f4",
+        "type": "tab",
+        "label": "healthFeed",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "da2ab75ef12c52a5",
+        "type": "http in",
+        "z": "7fd698158a8d52f4",
+        "name": "",
+        "url": "/feedGET",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 230,
+        "y": 180,
+        "wires": [
+            [
+                "4c4b7bb8ac3b4078"
+            ]
+        ]
+    },
+    {
+        "id": "543f58db96b10484",
+        "type": "http response",
+        "z": "7fd698158a8d52f4",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 710,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "5d940fdd2c9e378d",
+        "type": "debug",
+        "z": "7fd698158a8d52f4",
+        "name": "debug 19",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "9746f728550bcaf7",
+        "type": "http in",
+        "z": "7fd698158a8d52f4",
+        "name": "",
+        "url": "/feedPOST",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 280,
+        "y": 340,
+        "wires": [
+            [
+                "a4924df8ecb0bb15"
+            ]
+        ]
+    },
+    {
+        "id": "07423629e2283478",
+        "type": "http response",
+        "z": "7fd698158a8d52f4",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 890,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "079ac2817aadd5cc",
+        "type": "debug",
+        "z": "7fd698158a8d52f4",
+        "name": "debug 20",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "09c191b068fe2420",
+        "type": "http in",
+        "z": "7fd698158a8d52f4",
+        "name": "",
+        "url": "/feedDELETE",
+        "method": "delete",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 280,
+        "y": 480,
+        "wires": [
+            [
+                "89b6d01afc722864"
+            ]
+        ]
+    },
+    {
+        "id": "d7de0cf2737f2d89",
+        "type": "http response",
+        "z": "7fd698158a8d52f4",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 790,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "beed1ffba0330fcb",
+        "type": "debug",
+        "z": "7fd698158a8d52f4",
+        "name": "debug 21",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "a4924df8ecb0bb15",
+        "type": "split",
+        "z": "7fd698158a8d52f4",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 510,
+        "y": 340,
+        "wires": [
+            [
+                "93397c86063e803c"
+            ]
+        ]
+    },
+    {
+        "id": "4c4b7bb8ac3b4078",
+        "type": "cloudantplus in",
+        "z": "7fd698158a8d52f4",
+        "name": "",
+        "cloudant": "8f5e19ff4ad7acdd",
+        "database": "dbhealth",
+        "service": "_ext_",
+        "search": "_all_",
+        "design": "",
+        "index": "",
+        "x": 440,
+        "y": 180,
+        "wires": [
+            [
+                "543f58db96b10484",
+                "5d940fdd2c9e378d"
+            ]
+        ]
+    },
+    {
+        "id": "6b915223c781169c",
+        "type": "http in",
+        "z": "7fd698158a8d52f4",
+        "name": "",
+        "url": "/feedUPDATE",
+        "method": "put",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 210,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f60485c3d3b88a04",
+        "type": "http response",
+        "z": "7fd698158a8d52f4",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 670,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "b34ab0ab5d057e30",
+        "type": "debug",
+        "z": "7fd698158a8d52f4",
+        "name": "debug 23",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "93397c86063e803c",
+        "type": "cloudantplus out",
+        "z": "7fd698158a8d52f4",
+        "name": "",
+        "cloudant": "8f5e19ff4ad7acdd",
+        "database": "dbhealth",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "insert",
+        "x": 680,
+        "y": 340,
+        "wires": [
+            [
+                "07423629e2283478",
+                "079ac2817aadd5cc"
+            ]
+        ]
+    },
+    {
+        "id": "89b6d01afc722864",
+        "type": "cloudantplus out",
+        "z": "7fd698158a8d52f4",
+        "name": "",
+        "cloudant": "8f5e19ff4ad7acdd",
+        "database": "dbhealth",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "delete",
+        "x": 540,
+        "y": 500,
+        "wires": [
+            [
+                "d7de0cf2737f2d89",
+                "beed1ffba0330fcb"
+            ]
+        ]
+    },
+    {
+        "id": "8f5e19ff4ad7acdd",
+        "type": "cloudantplus",
+        "host": "https://apikey-v2-16d9pc9gjneh8on884qeslyhcih917bgxgtclub94xtt:02d33f7efed8fbdd9ebad5e26f041d13@8472bb0f-4f34-4675-bd25-3cf7a52343d1-bluemix.cloudantnosqldb.appdomain.cloud",
+        "name": "",
+        "useapikey": true
+    }
+]
