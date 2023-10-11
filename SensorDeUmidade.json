@@ -1,0 +1,342 @@
+[
+    {
+        "id": "0ccd96ed8f8ec1ee",
+        "type": "tab",
+        "label": "21-09",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7057321bcc267992",
+        "type": "http in",
+        "z": "0ccd96ed8f8ec1ee",
+        "name": "",
+        "url": "joseeliasCREATE",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 320,
+        "wires": [
+            [
+                "cd0088c9379e6ec1",
+                "1b37f01efd8ef49e"
+            ]
+        ]
+    },
+    {
+        "id": "4d0d9977c487137b",
+        "type": "http response",
+        "z": "0ccd96ed8f8ec1ee",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 810,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "cd0088c9379e6ec1",
+        "type": "cloudantplus out",
+        "z": "0ccd96ed8f8ec1ee",
+        "name": "",
+        "cloudant": "92c9cc39242c9963",
+        "database": "jose2109bd",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "insert",
+        "x": 550,
+        "y": 320,
+        "wires": [
+            [
+                "4d0d9977c487137b",
+                "fd2ee6625636e0e2"
+            ]
+        ]
+    },
+    {
+        "id": "fd2ee6625636e0e2",
+        "type": "debug",
+        "z": "0ccd96ed8f8ec1ee",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "4395e8aee15f73f4",
+        "type": "http response",
+        "z": "0ccd96ed8f8ec1ee",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 670,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "efde96651dfebdce",
+        "type": "debug",
+        "z": "0ccd96ed8f8ec1ee",
+        "name": "debug 15",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "31b83c8177f578dc",
+        "type": "http in",
+        "z": "0ccd96ed8f8ec1ee",
+        "name": "",
+        "url": "joseeliasREAD",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 150,
+        "y": 520,
+        "wires": [
+            [
+                "923747d3b0bb5b85"
+            ]
+        ]
+    },
+    {
+        "id": "56802531f1cfb841",
+        "type": "http in",
+        "z": "0ccd96ed8f8ec1ee",
+        "name": "",
+        "url": "joseeliasUPDATE",
+        "method": "put",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 260,
+        "y": 740,
+        "wires": [
+            [
+                "e919e8e17eb72be4"
+            ]
+        ]
+    },
+    {
+        "id": "320ef350fef46fe3",
+        "type": "http response",
+        "z": "0ccd96ed8f8ec1ee",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 770,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "e919e8e17eb72be4",
+        "type": "cloudantplus out",
+        "z": "0ccd96ed8f8ec1ee",
+        "name": "",
+        "cloudant": "92c9cc39242c9963",
+        "database": "jose2109bd",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "insert",
+        "x": 510,
+        "y": 740,
+        "wires": [
+            [
+                "320ef350fef46fe3",
+                "a3eb1188edbdc36b"
+            ]
+        ]
+    },
+    {
+        "id": "a3eb1188edbdc36b",
+        "type": "debug",
+        "z": "0ccd96ed8f8ec1ee",
+        "name": "debug 16",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "ce3d7e91801d854b",
+        "type": "http response",
+        "z": "0ccd96ed8f8ec1ee",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 910,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "18c40755409614a2",
+        "type": "cloudantplus out",
+        "z": "0ccd96ed8f8ec1ee",
+        "name": "",
+        "cloudant": "92c9cc39242c9963",
+        "database": "jose2109bd",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "delete",
+        "x": 650,
+        "y": 980,
+        "wires": [
+            [
+                "ce3d7e91801d854b",
+                "a760e88a2425bffe"
+            ]
+        ]
+    },
+    {
+        "id": "a760e88a2425bffe",
+        "type": "debug",
+        "z": "0ccd96ed8f8ec1ee",
+        "name": "debug 17",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 920,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "fa7cde4c219dcaef",
+        "type": "http in",
+        "z": "0ccd96ed8f8ec1ee",
+        "name": "",
+        "url": "joseeliasDELETE",
+        "method": "delete",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 290,
+        "y": 980,
+        "wires": [
+            [
+                "18c40755409614a2"
+            ]
+        ]
+    },
+    {
+        "id": "177efb3067804ffd",
+        "type": "inject",
+        "z": "0ccd96ed8f8ec1ee",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "15",
+        "payloadType": "num",
+        "x": 350,
+        "y": 1200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "923747d3b0bb5b85",
+        "type": "cloudantplus in",
+        "z": "0ccd96ed8f8ec1ee",
+        "name": "",
+        "cloudant": "92c9cc39242c9963",
+        "database": "jose2109bd",
+        "service": "_ext_",
+        "search": "_all_",
+        "design": "",
+        "index": "",
+        "x": 390,
+        "y": 520,
+        "wires": [
+            [
+                "4395e8aee15f73f4",
+                "efde96651dfebdce"
+            ]
+        ]
+    },
+    {
+        "id": "1b37f01efd8ef49e",
+        "type": "ui_gauge",
+        "z": "0ccd96ed8f8ec1ee",
+        "name": "",
+        "group": "43ede84c7e66a4af",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Umidade (%)",
+        "label": "units",
+        "format": "{{msg.payload.dado}}",
+        "min": "-40",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 390,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "92c9cc39242c9963",
+        "type": "cloudantplus",
+        "host": "https://apikey-v2-1sf2n1o95m2vpr2jfg0nc12cqd076yoyoopnhgjzuh5o:a7b29644e36c2dd9ed66686c4203c23b@8472bb0f-4f34-4675-bd25-3cf7a52343d1-bluemix.cloudantnosqldb.appdomain.cloud",
+        "name": "",
+        "useapikey": true
+    },
+    {
+        "id": "43ede84c7e66a4af",
+        "type": "ui_group",
+        "name": "Sensor de Umildade",
+        "tab": "b982a4113514723a",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b982a4113514723a",
+        "type": "ui_tab",
+        "name": "HackaTruck",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    }
+]
